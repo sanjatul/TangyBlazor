@@ -5,6 +5,10 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TangyWeb_Server", "TangyWeb_Server\TangyWeb_Server.csproj", "{DBC57537-1045-42CA-ACC9-932D78167B5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TangyWeb_Client", "TangyWeb_Client\TangyWeb_Client.csproj", "{32698854-3724-4E2F-A7BF-205B89497F6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tangy_Models", "Tangy_Models\Tangy_Models.csproj", "{F966C7E5-9588-4A48-B0B3-1D8EB30E9B3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{DBC57537-1045-42CA-ACC9-932D78167B5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBC57537-1045-42CA-ACC9-932D78167B5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBC57537-1045-42CA-ACC9-932D78167B5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32698854-3724-4E2F-A7BF-205B89497F6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32698854-3724-4E2F-A7BF-205B89497F6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32698854-3724-4E2F-A7BF-205B89497F6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32698854-3724-4E2F-A7BF-205B89497F6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F966C7E5-9588-4A48-B0B3-1D8EB30E9B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F966C7E5-9588-4A48-B0B3-1D8EB30E9B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F966C7E5-9588-4A48-B0B3-1D8EB30E9B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F966C7E5-9588-4A48-B0B3-1D8EB30E9B3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
