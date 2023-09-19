@@ -1,11 +1,15 @@
 ﻿@page "/learnBlazor/bindProp"
 <h3>Product</h3>
 Name: @Product.Name<br/>
-Available: @Product.IsActive<br/>
-Price: @Product.Price<br />
+@*Available: @Product.IsActive<br/>
+*@Price: @Product.Price<br />
+This product is : @(Product.IsActive?"Active":"InActive")<br />
+Active : <input type="checkbox" @bind-value="Product.IsActive" checked="@(Product.IsActive?"checked":null)"/><br />
 New Price:
 <input type="number" @bind-value="@Product.Price" @bind-value:event="oninput"/>
-<br />
+@*Works same*@
+@*<input type="number" @bind="@Product.Price" @bind:event="oninput"/>
+*@<br />
 
 @code {
     Tangy_Models.LearnBlazorModels.Demo_Product Product = new()
