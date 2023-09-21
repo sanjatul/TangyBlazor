@@ -52,6 +52,11 @@
     {
         EventType.Add("OnAfterRenderAsync is called");
     }
+    protected override bool ShouldRender()
+    {
+        EventType.Add("ShouldRender is called");
+        return true;
+    }
 
 }
 
