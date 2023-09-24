@@ -36,26 +36,33 @@
     public int Id{ get; set; }
     private CategoryDTO Category { get; set; } = new CategoryDTO();
     private string Title { get; set; } = "Create";
-    public bool IsLoading { get; set; } = true;
-    protected override async Task OnInitializedAsync()
+    public bool IsLoading { get; set; }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (Id == 0)
+        if (firstRender)
         {
-            //craete
-            IsLoading = false;
+            if (Id == 0)
+            {
+                //craete
+                IsLoading = false;
+            }
+            else
+            {
+                //update
+                Title = "Update";
+                LoadCategory();
+            }
         }
-        else
-        {
-            //update
-            Title = "Edit";
-            await Task.Run(LoadCategory);
-        }
+
 
     }
     private void LoadCategory()
     {
+        IsLoading = true;
+        StateHasChanged();
         Category = _categoryRepository.Get(Id);
         IsLoading = false;
+        StateHasChanged();
     }
     private void UpsertCategory()
     {
